@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "/BfPqrSG4lj95OqQazOpDJHdvjIXwbkNXGktTlecx8Y+kOrfTGzU9qLftKD1/Px6HANX3NG6MG7C44X2Pt/iGg==",
+  "success": true,
+  "projectFilePath": "E:\\programasCSharp\\WebBlazor\\FrontendBlazor\\BlazorCrud\\BlazorCrud\\BlazorCrud.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\srua1\\.nuget\\packages\\system.net.http.json\\5.0.0\\system.net.http.json.5.0.0.nupkg.sha512",
+    "C:\\Users\\srua1\\.nuget\\packages\\system.text.json\\5.0.0\\system.text.json.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

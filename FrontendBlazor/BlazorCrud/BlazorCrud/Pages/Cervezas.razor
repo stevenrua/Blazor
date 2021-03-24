@@ -1,0 +1,30 @@
+﻿@page "/cervezas"
+
+@using System.Net.Http
+@using System.Net.Http.Json
+@using BlazorCrud.Data
+@inject HttpClient Http
+
+<h3>Cervezas</h3>
+
+<table class="table">
+    @if (oRespuesta != null && oRespuesta.Data != null)
+    {
+        @foreach (var oElement in oRespuesta.Data)
+        {
+            <tr>
+                <td>@oElement.Id</td>
+                <td>@oElement.Nombre</td>
+                <td>@oElement.Marca</td>
+            </tr>
+        }
+    }
+</table>
+
+@code {
+    public string url = "/api/cerveza";
+    public Respuesta oRespuesta = new Respuesta();
+
+    protected override async Task OnInitializedAsync() =>
+        oRespuesta = await Http.GetFromJsonAsync<Respuesta>(url);
+}
